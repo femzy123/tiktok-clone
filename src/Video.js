@@ -41,7 +41,7 @@ function Video({
         song="All of the lights - Kanye West"
         description="Something very random then add a little hashtags #random"
       />
-      <VideoSidebar likes={likes} messages={messages} shares={shares} />
+      <VideoSidebar likes="300" messages="210" shares="56" />
     </div>
   );
 }
