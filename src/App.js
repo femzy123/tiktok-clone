@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Video from './Video';
+import video1 from "./videos/1.mp4";
+import video2 from "./videos/2.mp4";
+import video3 from "./videos/3.mp4";
+import video4 from "./videos/4.mp4";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__videos">
+        <Video file={video1} />
+        <Video file={video2} />
+        <Video file={video3} />
+        <Video file={video4} />
+      </div>
     </div>
   );
 }
